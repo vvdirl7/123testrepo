@@ -1,0 +1,5 @@
+dataset/*
+ocmnist/*
+training_log/*
+src/__pycache__
+output*
