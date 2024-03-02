@@ -3,7 +3,7 @@ from PIL import Image
 import medmnist
 
 
-class OCMnist(medmnist.OrganCMNIST):
+class OCMnist(medmnist.TissueMNIST):
     def __init__(
         self,
         root,
@@ -14,7 +14,7 @@ class OCMnist(medmnist.OrganCMNIST):
         target_test_transform=None,
         download=False,
     ):
-        super(medmnist.OrganCMNIST, self).__init__(
+        super(medmnist.TissueMNIST, self).__init__(
             split,
             root=root,
             transform=transform,
